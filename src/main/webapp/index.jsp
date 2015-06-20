@@ -8,17 +8,17 @@
 <title>EasyRegister - User login</title>
 </head>
 <body>
-	<form method="post" action="login" class="login12">
+	<form method="post" action="login" autocomplete="off" class="login12">
 		<p>
 			<label for="login">Логин:</label> 
-			<input type="text" name="loggin" id="login">
+			<input type="text" autocomplete="off" name="loggin" id="login">
 			<script>
   					document.getElementsByName('loggin')[0].focus();
 			</script>
 		</p>
 		<p>
-			<label for="password">Пароль:</label> <input type="password"
-				name="password" id="password">
+			<label for="password">Пароль:</label> <input autocomplete="off" type="password"
+				name="password"  id="password">
 		</p>
 	
 		

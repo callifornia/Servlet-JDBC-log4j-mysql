@@ -1,12 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<%@include file="comand.jsp" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd" >
-	
+<%@ page language="java" contentType="text/html; charset=utf-8"	pageEncoding="utf-8"%>
+<%@include file = "comand.jsp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" href="<c:url value="/resources/css/style.css" />">
-<title>EasyRegister - User search</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="<c:url value="/resources/css/style.css" />">
+	<title>EasyRegister - User edit</title>
 </head>
 <body>
 <table align="center" class= "mainTable">
@@ -15,7 +14,7 @@
 			<p class="login4" align="right">login as: ${login} </p>
 			<a href="logout" class = "logout2">Logout</a><br>
 		</td>
-	</tr>
+	</tr>	
 	<tr>
 		<td valign="top">
 		

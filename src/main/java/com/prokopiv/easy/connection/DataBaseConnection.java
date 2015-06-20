@@ -26,19 +26,28 @@ public class DataBaseConnection {
 			e.printStackTrace();
 		}
 	}
+	
 	private static void initConnectionParam(){
 		Properties prop = new Properties();
 			try {
 				prop.load(DataBaseConnection.class.getClassLoader().getResourceAsStream("dbconfig.properties"));
-				DRIVER = prop.getProperty("DB_DRIVER_CLASS");
-				URL = prop.getProperty("DB_URL");
-				LOGGIN = prop.getProperty("DB_LOGGIN");
-				PASSWORD = prop.getProperty("DB_PASSWORD");
+				DRIVER = prop.getProperty("local_driverClassName");
+				URL = prop.getProperty("local_url");
+				LOGGIN = prop.getProperty("local_username");
+				PASSWORD = prop.getProperty("local_password");
 			} catch (IOException e) {
 				logger.warn("Cant read db properties: " + e);
 				e.printStackTrace();
 			}
 	}
+	
+	
+//	private static void initConnectionParam(){
+//		DRIVER = "com.mysql.jdbc.Driver";
+//		URL = "jdbc:mysql://" + System.getenv("OPENSHIFT_MYSQL_DB_HOST") + ":" + System.getenv("OPENSHIFT_MYSQL_DB_PORT") + "/servletuser";
+//		LOGGIN = System.getenv("OPENSHIFT_MYSQL_DB_USERNAME");
+//		PASSWORD = System.getenv("OPENSHIFT_MYSQL_DB_PASSWORD");
+//	}
 
 	public static Connection getConnection() {
 		logger.info("getConnection()");

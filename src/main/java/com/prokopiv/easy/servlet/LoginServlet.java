@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.prokopiv.easy.connection.CreateDataBaseTabels;
 import com.prokopiv.easy.dao.User;
 import com.prokopiv.easy.service.UserService;
 import com.prokopiv.easy.service.UserServiceImpl;
@@ -22,18 +21,11 @@ public class LoginServlet extends HttpServlet{
 	private static final Logger logger = LogManager.getLogger(LoginServlet.class);
 	private UserService userService;
 	
-	
-	@Override
-	public void destroy() {
-		CreateDataBaseTabels.dropTables();
-	}
-	
 	@Override
 	public void init() throws ServletException {
 		this.userService = new UserServiceImpl();
-		CreateDataBaseTabels.createTables();
 	}
-	
+		
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

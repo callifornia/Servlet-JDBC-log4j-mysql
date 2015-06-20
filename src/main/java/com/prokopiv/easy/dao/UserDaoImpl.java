@@ -27,14 +27,14 @@ public class UserDaoImpl implements UserDao {
 	@Override
 	public User getUserByLogin(String login) throws DataBaseException {
 		logger.info("getUserByLogin: " + login);
-		String sql = "SELECT userid, login, password, roles, name, lastName, phone, mail, adress FROM users WHERE login = ?";
+		String sql = "SELECT userid, login, password, roles, name, lastName, phone, mail, adress FROM users WHERE login like ?";
 		PreparedStatement pr = null;
 		ResultSet rs = null;
 		User user = null; 
 		try{
 			user = new User();
 			pr = connection.prepareStatement(sql);
-			pr.setString(1, login);
+			pr.setString(1, login + "%");
 			rs = pr.executeQuery();
 			while(rs.next()){
 				user.setUserId(rs.getString("userid"));

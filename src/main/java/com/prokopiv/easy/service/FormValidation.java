@@ -23,16 +23,16 @@ public class FormValidation {
 	
 	private  HashMap<String, String> checkForm(User user){
 		HashMap<String, String> errorMap = new HashMap<String, String>();
-		if(user.getName().length() < 4 || user.getName().length() > 15){
-			errorMap.put("errorName", "* (4 - 10 symbols)");
-		} if (user.getLastName().length() < 4 || user.getLastName().length() > 15){
-			errorMap.put("errorLastName", "* (4 - 10 symbols)");
-		} if(user.getPhone().length() < 4 || user.getPhone().length() > 15){
-			errorMap.put("errorPhone", "* (4 - 10 symbols)");
-		} if(user.getEmail().length() < 4 || user.getEmail().length() > 15){
-			errorMap.put("errorEmail", "* (4 - 10 symbols)");
-		} if(user.getAdress().length() < 4 || user.getAdress().length() > 35){
-			errorMap.put("errorAdress", "* (4 - 10 symbols)");
+		if(user.getName().length() < 1 || user.getName().length() > 35){
+			errorMap.put("errorName", "* (1 - 35 symbols)");
+		} if (user.getLastName().length() < 1 || user.getLastName().length() > 35){
+			errorMap.put("errorLastName", "* (1 - 35 symbols)");
+		} if(user.getPhone().length() < 4 || user.getPhone().length() > 20){
+			errorMap.put("errorPhone", "* (4 - 20 symbols)");
+		} if(user.getEmail().length() < 4 || user.getEmail().length() > 35){
+			errorMap.put("errorEmail", "* (4 - 35 symbols)");
+		} if(user.getAdress().length() < 1 || user.getAdress().length() > 200){
+			errorMap.put("errorAdress", "* (1 - 200 symbols)");
 		}
 		
 		return errorMap;
