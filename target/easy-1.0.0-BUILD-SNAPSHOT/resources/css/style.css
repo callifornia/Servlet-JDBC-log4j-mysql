@@ -45,8 +45,6 @@ q:before, q:after {
   content: none;
 }
 
-
-
 body, .login-submit, .login-submit:before, .login-submit:after {
   background: #373737 url("../img/bg.png") 0 0 repeat;
 }
@@ -96,7 +94,29 @@ a:hover {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
   font-size: 12px;
 }
-
+.inputTextArea{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+	padding: 0 10px;
+	text-shadow: 1px 1px 1px black;
+	resize: vertical;
+	border-radius: 5px;
+	border:0;
+	color: #bbb;
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+	background: rgba(0, 0, 0, 0.16);
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgba(0, 0, 0, 0.156863);
+}
 .login2 {
   position: relative;
   margin: 200px auto;
@@ -214,11 +234,11 @@ input[type=text]:focus,  input[type=password]:focus {
   outline: 0;
 }
 .test {
-	background: silver;
-	color: black;
+	  background: rgb(55, 55, 55);
+  color: rgb(187, 192, 192);
 }
-.test:ACTIVE{
-	color: black;
+.test:active{
+	color:red;
 }
 
 label {
@@ -331,7 +351,7 @@ label {
 }
 .firstRow {
 	width: 15%;
-	color:white;
+	color: silver;
 	padding-bottom: 10px;
 }
 .secondRow {

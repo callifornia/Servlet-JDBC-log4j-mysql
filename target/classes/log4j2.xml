@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration >
+  <Properties>
+  	<Property name="dataBasePath">C:/log/DataBase.log</Property>
+  	<Property name="api">C:/log/Api.log</Property>
+  </Properties>
+  
+  <Loggers>
+  
+  	<Logger name = "com.prokopiv.jdbc.connection" level = "all" additivity = "false">
+  		<AppenderRef ref = "dataBaseFile" />
+  	</Logger>
+  	
+  	<Logger name = "com.prokopiv.dao" level = "all" additivity = "false">
+  		<AppenderRef ref = "dataBaseFile" />
+  	</Logger>
+  	
+  	<Logger name = "com.prokopiv.exception" level = "all" additivity = "false">
+  		<AppenderRef ref = "dataBaseFile" />
+  	</Logger>
+
+  	<Logger name = "com.prokopiv.servlet" level = "all" additivity = "false">
+  		<AppenderRef ref = "api" />
+  	</Logger>
+  	<Logger name = "com.prokopiv.service" level = "all" additivity = "false">
+  		<AppenderRef ref = "Console" />
+  	</Logger>
+  </Loggers>
+  <Appenders>
+ 	<File name ="dataBaseFile" filename="${dataBasePath}">
+ 		<PatternLayout >
+ 			<Pattern>%d %p %C [%t] %m%n</Pattern>
+ 		</PatternLayout>
+ 	</File>
+ 	<File name ="api" filename="${api}">
+ 		<PatternLayout >
+ 			<Pattern>%d %p %C [%t] %m%n</Pattern>
+ 		</PatternLayout>
+ 	</File>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+  </Appenders>
+</Configuration>

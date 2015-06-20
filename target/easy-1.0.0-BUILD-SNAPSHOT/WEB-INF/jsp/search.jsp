@@ -5,7 +5,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" href="<c:url value="/resources/css/style.css" />">
-	<title>EasyRegister - User edit</title>
+	<link rel="icon" href="<c:url value="/resources/img/favicon.ico" />">
+	<title>User edit</title>
 </head>
 <body>
 <table align="center" class= "mainTable">
@@ -30,7 +31,7 @@
 			<p class="login-submit">
 				<button type="submit" class="login-button">Войти</button>
 			</p>
-			<p  align="center"> - Press "Enter" to find all users</p>
+			<p  align="center"> - Press "Enter" to show all users</p>
 				<p class="login2" >${error}</p>
 			</form>
 		</td>

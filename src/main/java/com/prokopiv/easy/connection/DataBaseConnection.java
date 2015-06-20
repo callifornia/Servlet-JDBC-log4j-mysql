@@ -31,10 +31,10 @@ public class DataBaseConnection {
 		Properties prop = new Properties();
 			try {
 				prop.load(DataBaseConnection.class.getClassLoader().getResourceAsStream("dbconfig.properties"));
-				DRIVER = prop.getProperty("local_driverClassName");
-				URL = prop.getProperty("local_url");
-				LOGGIN = prop.getProperty("local_username");
-				PASSWORD = prop.getProperty("local_password");
+				DRIVER = prop.getProperty("driverClassName");
+				URL = prop.getProperty("url");
+				LOGGIN = prop.getProperty("username");
+				PASSWORD = prop.getProperty("password");
 			} catch (IOException e) {
 				logger.warn("Cant read db properties: " + e);
 				e.printStackTrace();

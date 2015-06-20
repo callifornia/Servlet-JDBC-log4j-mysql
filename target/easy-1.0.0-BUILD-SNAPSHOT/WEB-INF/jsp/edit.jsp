@@ -4,8 +4,9 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="icon" href="<c:url value="/resources/img/favicon.ico" />">
 	<link rel="stylesheet" href="<c:url value="/resources/css/style.css" />">
-	<title>EasyRegister - User edit</title>
+	<title>User edit</title>
 </head>
 <body>
 <table align="center" class="mainTable">
@@ -93,11 +94,12 @@
 						</td>
 					</tr>
 					<tr>
-						<td class = "firstRow" valign="top" align="left"> 
+						<td class = "firstRow" style = "vertical-align: middle;" valign="top" align="left"> 
 							<p>adress:</p>
 						</td>
 						<td class = "secondRow" valign="top" align="left">
-							<input type="text" value="${user.adress}" name = "adress" class = "inputEdit">
+							<textarea rows="6" cols="33" type="text"  name = "adress" class = "inputTextArea" >
+						${user.adress}</textarea>
 						</td>
 						<td class = "thirdRow" valign="top" align="left"> 
 							<p class="Error">  ${error.errorAdress}</p>

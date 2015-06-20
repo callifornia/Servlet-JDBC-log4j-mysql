@@ -6,7 +6,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" href="<c:url value="/resources/css/style.css" />">
-<title>EasyRegister - Users</title>
+<link rel="icon" href="<c:url value="/resources/img/favicon.ico" />">
+<title>Users</title>
 </head>
 <body>
 
