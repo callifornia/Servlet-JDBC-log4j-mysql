@@ -5,6 +5,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" href="<c:url value="/resources/css/style.css" />">
+	<link rel="icon" href="<c:url value="/resources/img/favicon.ico" />">
 	<title>User edit</title>
 </head>
 <body>
