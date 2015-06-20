@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" href="<c:url value="/resources/css/style.css" />">
-<title>EasyRegister - Error page</title>
+<title>Error page</title>
 </head>
 <body>
 <p class="login3334" align="center">404</p>

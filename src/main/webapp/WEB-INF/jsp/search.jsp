@@ -5,7 +5,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" href="<c:url value="/resources/css/style.css" />">
-	<title>EasyRegister - User edit</title>
+	<title>User edit</title>
 </head>
 <body>
 <table align="center" class= "mainTable">

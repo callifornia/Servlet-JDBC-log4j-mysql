@@ -5,7 +5,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="<c:url value="/resources/css/style.css" />">
-<title>EasyRegister - User login</title>
+<title>User login</title>
 </head>
 <body>
 		
