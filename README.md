@@ -1,22 +1,17 @@
-# Servlet-JSP-JDBC
-// Note: dbconfig.properties - config бд.
-// Note: sql tables create (com.prokopiv.jdbc.connection.CreateDataBaseTabels class) by init() methods on LoginServlet.
+# Web app wich demonstrate CRUD operations with Servlet/Filters and JSP technology
 
-Проект має представляти собою серверний додаток який взаємодіє з БД. 
-При звертанні по URL користувач потрапляє на сторінку авторизації.
+Link to the shared project: http://store-morein.rhcloud.com/easy
 
-Після авторизації (вводу логіна та пароля) користувач переходить на сторінку з формою
-пошука каристувача. Тут доступні наступні дії: пошук користовуча по логіну, та пошук всіх користувачів
-по замовчуванню. Результат пошуку відображається у вигляді таблиці користувачів яка має наступні стовпці:
-id користувача, логін, роль, імя, фамілія, номер телефону, почтовий адрес, адрес проживання. 
-Також на цій сторінці повинно бути доступні можливості добавлення, редагування, та видалення користувачів.
 
-Форма створення, редагування повинна дозволяти редагувати та зберігати данні користувача: 
-логін (задається тільки при добавленні нового користувача), імя, фамілія, 
-роль користувача (адміністратор, користувач), телефон, почтовий адрес, адрес.
+Technology used on this project:
+Servlet, Filters, JSP, JDBC, MySQL, HTML/CSS/JavaScript, Log4j2, Maven, developer tool: Eclipse IDE.
 
-Вхід у систему дозволенний тільки користувачам у яких вибрана роль "адміністратор". Нові користувачі
-з ролю адміністратор можуть заходити в систему.
+Project contains 3 layers: 
 
-Інформація о користувачах повинна зберігаєтися в базі данних.
+servlet layer - include servlets wich geting GET/POST request from client
 
+service layer - contain all available operation
+
+filter layer - contain authorization filter wich chaking all request from client and encoding filter
+
+dao layer - include methods to work with data base
