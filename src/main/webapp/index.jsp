@@ -8,6 +8,7 @@
 <title>EasyRegister - User login</title>
 </head>
 <body>
+		
 	<form method="post" action="login" autocomplete="off" class="login12">
 		<p>
 			<label for="login">Логин:</label> 
@@ -25,7 +26,8 @@
 		<p class="login-submit">
 			<button type="submit" class="login-button">Войти</button>
 		</p>
-		<p class="login44" >- admin / admin by default</p>
+
+		<p class="login44" >- admin/admin or user/user (only admin has access to enter)</p>
 		<p class="login2" > ${error}</p>
 	</form>
 </body>

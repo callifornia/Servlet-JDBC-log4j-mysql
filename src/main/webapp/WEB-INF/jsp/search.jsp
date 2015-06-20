@@ -30,7 +30,7 @@
 			<p class="login-submit">
 				<button type="submit" class="login-button">Войти</button>
 			</p>
-			<p  align="center"> - Press "Enter" to find all users</p>
+			<p  align="center"> - Press "Enter" to show all users</p>
 				<p class="login2" >${error}</p>
 			</form>
 		</td>
