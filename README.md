@@ -15,3 +15,6 @@ service layer - contain all available operation
 filter layer - contain authorization filter wich chaking all request from client and encoding filter
 
 dao layer - include methods to work with data base
+
+
+If you have any question feel free to cointact with me: skype - g.prokopiv/ e-mail - g.prokopiv@gmail.com
